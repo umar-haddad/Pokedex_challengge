@@ -104,18 +104,13 @@ function DetailPage() {
             <div className="d-flex gap-3" key={i}>
               <div>
                 <svg
+                  xmlns={imageSrc}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-20 h-20 p-4 bg-primary rounded-full"
+                  className="w-20 h-20 p-4 bg-slate-500 text-slate-300 rounded-full"
                 >
-                  <image
-                    href={imageSrc}
-                    width="100"
-                    height="100"
-                    className="rounded-full"
-                  />
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
