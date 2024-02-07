@@ -102,35 +102,23 @@ function DetailPage() {
         <div className="d-flex flex-column p-4 bg-dark rounded-lg mt-4 gap-6">
           {pokemon.abilities.map((item, i) => (
             <div className="d-flex gap-3" key={i}>
-              <div>
-                <svg
-                  xmlns={imageSrc}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-20 h-20 p-4 bg-slate-500 text-slate-300 rounded-full"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
-                  />
-                </svg>
-              </div>
-              <div className="pt-6 font-weight-bold d-flex flex-column">
-                <div className="px-8">
-                  <p className="text-2xl font-weight-bold text-warning">
-                    {item.name}
-                  </p>
-                  <p className="text-secondary">
-                    <span className="font-weight-bold">Effect:</span>{" "}
-                    {item.effect}
-                  </p>
-                  <p className="text-secondary">
-                    <span className="font-weight-bold">Description:</span>{" "}
-                    {item.description}
-                  </p>
+              <div className="d-flex flex-collumn">
+                <img src={imageSrc} alt="" className="balls col-1 w-5 h-5 " />
+
+                <div className="pt-6 font-weight-bold d-flex flex-column">
+                  <div className="px-2">
+                    <p className="text-2xl font-weight-bold text-warning">
+                      {item.name}
+                    </p>
+                    <p className="text-secondary">
+                      <span className="font-weight-bold">Effect:</span>{" "}
+                      {item.effect}
+                    </p>
+                    <p className="text-secondary">
+                      <span className="font-weight-bold">Description:</span>{" "}
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

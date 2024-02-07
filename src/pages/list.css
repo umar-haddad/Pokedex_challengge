@@ -24,3 +24,11 @@ input {
 Link {
   width: 100%;
 }
+
+.balls {
+  height: 60%;
+  box-shadow: 5px 5px 0px 0px rgb(157, 68, 68);
+  -webkit-box-shadow: 5px 5px 0px 0px rgb(212, 21, 21);
+  -moz-box-shadow: 5px 5px 0px 0px rgb(201, 27, 27);
+  background: #703030;
+}
